@@ -1,4 +1,5 @@
--- Serie A
+-- SERIE A
+
 --Rasmus Hojlund
 playerid = 259399
 if (IsPlayerPresigned(playerid)) then
@@ -159,6 +160,7 @@ if (IsPlayerLoanedOut(playerid)) then
 end
 TransferPlayer(playerid, 131682, 4000000, 60000, 36)
 
+--[[
 --Khalaili
 playerid = 70888
 if (IsPlayerPresigned(playerid)) then
@@ -170,6 +172,7 @@ if (IsPlayerLoanedOut(playerid)) then
   TerminateLoan(playerid)
 end
 TransferPlayer(playerid, 131682, 25000000, 50000, 48)
+--]]
 
 --Dumfries
 playerid = 233096
@@ -485,6 +488,7 @@ if (IsPlayerLoanedOut(playerid)) then
   TerminateLoan(playerid)
 end
 TransferPlayer(playerid, 1943, 18500000, 20000, 48)
+LoanPlayer(playerid, 110374, 12, -1)
 
 
 
@@ -631,6 +635,18 @@ if (IsPlayerLoanedOut(playerid)) then
 end
 TransferPlayer(playerid, 205, 0, 10000, 48)
 
+--Akor Adams
+playerid = 266256
+if (IsPlayerPresigned(playerid)) then
+  -- Delete presigned contract to force transfer
+  DeletePresignedContract(playerid)
+end
+if (IsPlayerLoanedOut(playerid)) then
+  -- Terminate loan to force transfer
+  TerminateLoan(playerid)
+end
+TransferPlayer(playerid, 205, 16000000, 30000, 48)
+
 --Issa Doumbia
 playerid = 245275
 if (IsPlayerPresigned(playerid)) then
@@ -653,7 +669,7 @@ TransferPlayer(playerid, 205, 25000000, 20000, 48)
 
 
 
---Bundesliga
+--BUNDESLIGA
 
 --Saibari
 playerid = 259480
@@ -966,7 +982,8 @@ TransferPlayer(playerid, 34, 1000000, 10000, 48)
 
 
 
---Premier League
+--PREMIER LEAGUE
+
 --Jacquet
 playerid = 278903
 if (IsPlayerPresigned(playerid)) then
@@ -1283,6 +1300,19 @@ end
 TransferPlayer(playerid, 1, 0, 20000, 48)
 
 
+--Tchaouna 
+playerid = 264880
+if (IsPlayerPresigned(playerid)) then
+  -- Delete presigned contract to force transfer
+  DeletePresignedContract(playerid)
+end
+if (IsPlayerLoanedOut(playerid)) then
+  -- Terminate loan to force transfer
+  TerminateLoan(playerid)
+end
+TransferPlayer(playerid, 1800, 20000000, 27000, 48)
+
+
 
 
 
@@ -1471,6 +1501,19 @@ TransferPlayer(playerid, 111817, 20000000, 43000, 48)
 
 
 
+--Ugochukwu
+playerid = 257084
+if (IsPlayerPresigned(playerid)) then
+  -- Delete presigned contract to force transfer
+  DeletePresignedContract(playerid)
+end
+if (IsPlayerLoanedOut(playerid)) then
+  -- Terminate loan to force transfer
+  TerminateLoan(playerid)
+end
+TransferPlayer(playerid, 325, 28000000, 60000, 48)
+
+
 --Sidiki Cherif
 playerid = 277485
 if (IsPlayerPresigned(playerid)) then
@@ -1527,12 +1570,10 @@ if (IsPlayerPresigned(playerid)) then
   -- Delete presigned contract to force loan
   DeletePresignedContract(playerid)
 end
-
 if (IsPlayerLoanedOut(playerid)) then
   -- Terminate loan to force new loan
   TerminateLoan(playerid)
 end
-
 LoanPlayer(playerid, 436, 12, -1)
 
 
@@ -1556,12 +1597,10 @@ if (IsPlayerPresigned(playerid)) then
   -- Delete presigned contract to force loan
   DeletePresignedContract(playerid)
 end
-
 if (IsPlayerLoanedOut(playerid)) then
   -- Terminate loan to force new loan
   TerminateLoan(playerid)
 end
-
 LoanPlayer(playerid, 245, 12, -1)
 
 
