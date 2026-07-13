@@ -12,3 +12,6 @@ note:
 - some free agents might not exist in your squad file depending on the date so it'll give you an error but it's fine
 - everything is customizable
 - any suggestions are welcomed :)
+
+
+!! Be careful using this and have a backup ready, I'm not an expert !!
